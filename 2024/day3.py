@@ -1,4 +1,4 @@
-inp = open("d3.txt", "r")
+inp = open("day3.txt", "r")
 
 state = 1
 
