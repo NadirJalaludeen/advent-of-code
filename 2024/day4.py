@@ -1,6 +1,6 @@
 import numpy as np
 
-inp_1 = open("day4.txt", "r")
+inp_1 = open("d4.txt", "r")
 inp = []
 inp_d = []
 
@@ -13,13 +13,7 @@ for line in inp_1:
             l.append(c)
     inp.append(l)
 
-def xmas(tab):
-    i = 0
-    for c in tab:
-        if c == search[i%4]:
-            i += 1
-    return (''.join(tab)).count("XMAS")
-    return i
+xmas = lambda tab: (''.join(tab)).count("XMAS")
 
 inp = np.array(inp)
 inp90 = np.rot90(inp)
