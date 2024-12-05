@@ -1,5 +1,3 @@
-import numpy as np
-
 file = open("day5.txt", "r")
 
 def verify(l, iix = False):
@@ -33,6 +31,6 @@ for line in file:
         a = [int(i) for i in line.split(",")]
         pages.append(a)
 
-print(np.sum([x[len(x)//2] for x in pages if verify(x)]))
+print(sum([x[len(x)//2] for x in pages if verify(x)]))
 
-print(np.sum([fix(x)[len(x)//2] for x in pages if not verify(x)]))
+print(sum([fix(x)[len(x)//2] for x in pages if not verify(x)]))
